@@ -1,0 +1,458 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Course selling app",
+    "dateExported": "2023-09-07T19:55:09.465Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "5e7cb679-7a4b-4ce7-85e2-67f371e51774",
+            "name": "admin",
+            "containerId": "",
+            "created": "2023-08-28T22:18:56.814Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "0ea2759c-46fb-4736-97da-c012f0e196d4",
+            "name": "admin-token",
+            "containerId": "",
+            "created": "2023-08-28T22:18:56.815Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "83e9cb73-f050-4cb9-af0b-a463b7e3e4f7",
+            "name": "User routes",
+            "containerId": "",
+            "created": "2023-08-28T22:18:56.816Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "6df1c8ad-a9a8-4b4d-886f-705e9fe50944",
+            "name": "User token",
+            "containerId": "",
+            "created": "2023-08-28T22:18:56.817Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "cb276e34-179b-4254-b041-15b6a48f17ad",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "5e7cb679-7a4b-4ce7-85e2-67f371e51774",
+            "name": "Admin sign up",
+            "url": "http://localhost:3000/admin/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-28T22:18:56.815Z",
+            "modified": "2023-08-28T22:18:56.815Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"username\": \"harkirat@gmail.com\",\n    \"password\": \"123456\"\n}"
+            }
+        },
+        {
+            "_id": "249b0bde-6aaa-4bb3-9b44-d8d6839b418d",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "5e7cb679-7a4b-4ce7-85e2-67f371e51774",
+            "name": "Admin sign in",
+            "url": "http://localhost:3000/admin/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-28T22:18:56.816Z",
+            "modified": "2023-08-28T22:18:56.816Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "harkirat@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ]
+        },
+        {
+            "_id": "e30ae5e1-9844-45bf-95fb-186f76d5601e",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "5e7cb679-7a4b-4ce7-85e2-67f371e51774",
+            "name": "Admin create course",
+            "url": "http://localhost:3000/admin/courses",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-28T22:18:56.817Z",
+            "modified": "2023-08-28T22:18:56.817Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "harkirat@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"Full stack development\",\n    \"description\": \"Full stack dev course by harkirat\",\n    \"price\": 5999,\n    \"imageLink\": \"https://d33g7sdvsfd029.cloudfront.net/subject/2023-01-17-0.3698267942851394.jpg\",\n    \"published\": true\n}"
+            }
+        },
+        {
+            "_id": "dbed1bc1-e2aa-4b4e-8323-830d3a2aa0e1",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "5e7cb679-7a4b-4ce7-85e2-67f371e51774",
+            "name": "Admin update course",
+            "url": "http://localhost:3000/admin/courses/123",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-08-28T22:18:56.818Z",
+            "modified": "2023-08-28T22:18:56.818Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "harkirat@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"Full stack development new\",\n    \"description\": \"Full stack dev course by harkirat singh\",\n    \"price\": 5999,\n    \"imageLink\": \"https://d33g7sdvsfd029.cloudfront.net/subject/2023-01-17-0.3698267942851394.jpg\",\n    \"published\": true\n}"
+            }
+        },
+        {
+            "_id": "a84ddd80-43bc-4f5c-a3b6-2980c4d03be4",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "5e7cb679-7a4b-4ce7-85e2-67f371e51774",
+            "name": "Get courses",
+            "url": "http://localhost:3000/admin/courses/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-08-28T22:18:56.819Z",
+            "modified": "2023-08-28T22:18:56.819Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "harkirat@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ]
+        },
+        {
+            "_id": "e9793154-7f0a-495e-84f8-dd50372668f1",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "0ea2759c-46fb-4736-97da-c012f0e196d4",
+            "name": "Admin sign up",
+            "url": "http://localhost:3000/admin/signup",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-08-28T22:18:56.820Z",
+            "modified": "2023-09-07T11:20:27.152Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"username\": \"uzair@gmail.com\",\n    \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ea0c8160-428e-42a6-b331-4d6418786a99",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "0ea2759c-46fb-4736-97da-c012f0e196d4",
+            "name": "Admin sign in",
+            "url": "http://localhost:3000/admin/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-08-28T22:18:56.821Z",
+            "modified": "2023-09-07T17:54:58.876Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "uzair@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c9d342a-d8d6-457e-91bb-a022a4c7a2c8",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "0ea2759c-46fb-4736-97da-c012f0e196d4",
+            "name": "Admin create course",
+            "url": "http://localhost:3000/admin/courses",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-08-28T22:18:56.822Z",
+            "modified": "2023-09-07T18:27:37.888Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "harkirat@gmail.com"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InV6YWlyQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY5NDExMTE5OCwiZXhwIjoxNjk0MTE0Nzk4fQ.Qop20F2P6gewssRZ2O8o5vg8RLr3hPN287FRS_pKvxY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"Full stack development\",\n    \"description\": \"Data Scince\",\n    \"price\": 9999,\n    \"imageLink\": \"https://d33g7sdvsfd029.cloudfront.net/subject/2023-01-17-0.3698267942851394.jpg\",\n    \"published\": true\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c3858bde-e25d-401c-97cb-f27e69de0ea6",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "0ea2759c-46fb-4736-97da-c012f0e196d4",
+            "name": "Admin update course",
+            "url": "http://localhost:3000/admin/courses/64fa1619c8f7dec2d6627c43",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-08-28T22:18:56.823Z",
+            "modified": "2023-09-07T18:29:57.975Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InV6YWlyQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY5NDExMTE5OCwiZXhwIjoxNjk0MTE0Nzk4fQ.Qop20F2P6gewssRZ2O8o5vg8RLr3hPN287FRS_pKvxY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \n      \"_id\": \"64fa1619c8f7dec2d6627c43\",\n      \"title\": \"Data Scince\",\n      \"description\": \"Data Scince Course By Uzair Ahmed\",\n      \"price\": 9999,\n      \"imageLink\": \"https://d33g7sdvsfd029.cloudfront.net/subject/2023-01-17-0.3698267942851394.jpg\",\n      \"published\": true\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "139505c6-58e1-4bb0-b839-fa17013d8b19",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "0ea2759c-46fb-4736-97da-c012f0e196d4",
+            "name": "Get courses",
+            "url": "http://localhost:3000/admin/courses/",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-08-28T22:18:56.824Z",
+            "modified": "2023-09-07T18:31:01.461Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InV6YWlyQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY5NDExMTE5OCwiZXhwIjoxNjk0MTE0Nzk4fQ.Qop20F2P6gewssRZ2O8o5vg8RLr3hPN287FRS_pKvxY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c3226ab3-a02b-4e7c-a43f-65b5039f8cea",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "83e9cb73-f050-4cb9-af0b-a463b7e3e4f7",
+            "name": "User sign up",
+            "url": "http://localhost:3000/users/signup",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-08-28T22:18:56.825Z",
+            "modified": "2023-08-28T22:18:56.825Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"username\": \"raman@gmail.com\",\n    \"password\": \"123456\"\n}"
+            }
+        },
+        {
+            "_id": "b94fe50d-d373-447c-afa0-92cfdbceb6a4",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "83e9cb73-f050-4cb9-af0b-a463b7e3e4f7",
+            "name": "User sign in",
+            "url": "http://localhost:3000/users/login",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-08-28T22:18:56.826Z",
+            "modified": "2023-08-28T22:18:56.826Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "raman@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ]
+        },
+        {
+            "_id": "badf89f9-a6ed-41fb-9e92-f4d30916058e",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "83e9cb73-f050-4cb9-af0b-a463b7e3e4f7",
+            "name": "User get courses",
+            "url": "http://localhost:3000/users/courses",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-08-28T22:18:56.827Z",
+            "modified": "2023-08-28T22:18:56.827Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "raman@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ]
+        },
+        {
+            "_id": "5d1481c3-b070-4a3e-923f-7c268393a361",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "83e9cb73-f050-4cb9-af0b-a463b7e3e4f7",
+            "name": "User purchase course",
+            "url": "http://localhost:3000/users/courses/1688061885461",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-08-28T22:18:56.828Z",
+            "modified": "2023-08-28T22:18:56.828Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "raman@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ]
+        },
+        {
+            "_id": "b68166f2-6b42-4d39-8827-be7678c049a7",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "83e9cb73-f050-4cb9-af0b-a463b7e3e4f7",
+            "name": "User get purchased course",
+            "url": "http://localhost:3000/users/purchasedCourses",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-08-28T22:18:56.829Z",
+            "modified": "2023-08-28T22:18:56.829Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "raman@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ]
+        },
+        {
+            "_id": "b854245e-dff3-4e2c-8dc6-c6f61e000347",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "6df1c8ad-a9a8-4b4d-886f-705e9fe50944",
+            "name": "User sign up",
+            "url": "http://localhost:3000/users/signup",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-08-28T22:18:56.830Z",
+            "modified": "2023-09-07T13:00:16.862Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"username\": \"usama@gmail.com\",\n    \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "169aa535-221a-43dc-9e54-9093566b61b7",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "6df1c8ad-a9a8-4b4d-886f-705e9fe50944",
+            "name": "User sign in",
+            "url": "http://localhost:3000/users/login",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-08-28T22:18:56.831Z",
+            "modified": "2023-09-07T13:01:32.944Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "usama@gmail.com"
+                },
+                {
+                    "name": "password",
+                    "value": "123456"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b105d640-3023-445e-9bb1-9f07da302454",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "6df1c8ad-a9a8-4b4d-886f-705e9fe50944",
+            "name": "User get courses",
+            "url": "http://localhost:3000/users/courses",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-08-28T22:18:56.832Z",
+            "modified": "2023-09-07T18:31:34.285Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzYW1hQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjk0MTExNDgyLCJleHAiOjE2OTQxMTUwODJ9.2RWC6RgNin0qyt4bOzyTv6xvx-glAqyQyzb8X7yH2xU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7307bad8-e8a4-4c5d-bc49-341661fa0b3e",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "6df1c8ad-a9a8-4b4d-886f-705e9fe50944",
+            "name": "User purchase course",
+            "url": "http://localhost:3000/users/courses/64fa1619c8f7dec2d6627c43",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2023-08-28T22:18:56.833Z",
+            "modified": "2023-09-07T18:32:32.599Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzYW1hQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjk0MTExNDgyLCJleHAiOjE2OTQxMTUwODJ9.2RWC6RgNin0qyt4bOzyTv6xvx-glAqyQyzb8X7yH2xU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "698ed595-aa09-40c7-bd34-a12fa42696a7",
+            "colId": "353a3010-4b38-4309-b3c8-3682141bc6dc",
+            "containerId": "6df1c8ad-a9a8-4b4d-886f-705e9fe50944",
+            "name": "User get purchased course",
+            "url": "http://localhost:3000/users/purchasedCourses",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2023-08-28T22:18:56.834Z",
+            "modified": "2023-09-07T18:37:54.329Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzYW1hQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjk0MTExODY1LCJleHAiOjE2OTQxMTU0NjV9.oVW6YFy1xq7C34O9qI3cAIfuACUgZdzTInVWfwRbUNI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
