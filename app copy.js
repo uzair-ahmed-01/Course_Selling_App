@@ -119,7 +119,7 @@ app.get("/admin/courses", authenticateJwt, async (req, res) => {
   res.json({ courses });
 });
 
-// User routes
+// User Routes
 app.post("/users/signup", async (req, res) => {
   const { username, password } = req.body;
   const user = await User.findOne({ username });
