@@ -55,6 +55,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/courses", {
   useUnifiedTopology: true,
 });
 
+// Admin Routes
 app.post("/admin/signup", (req, res) => {
   const { username, password } = req.body;
   function callback(admin) {
