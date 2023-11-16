@@ -4,6 +4,9 @@
   "description": "course selling app",
   "main": "course-app.js",
   "type": "module",
+  "engines": {
+    "node": ">=14.20.1"
+  },
   "scripts": {
     "dev": "nodemon app",
     "start": "node app",
