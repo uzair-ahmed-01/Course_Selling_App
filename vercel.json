@@ -3,13 +3,14 @@
   "build": [
     {
       "src": "app.js",
-      "use":"@now/node"
+      "use": "@now/node",
+      "buildCommand": "next build"
     }
   ],
-  "routes":[
+  "routes": [
     {
-        "src": "/(.*)",
-        "des":"app.js"
+      "src": "/(.*)",
+      "des": "app.js"
     }
   ]
 }
