@@ -24,7 +24,9 @@ app.use(express.json());
 app.use("/users",userRoutes);
 app.use("/admin",adminRoutes);
 
-
+app.get("/",(req,res)=>{
+res.send("Welcome to Course Selling App")
+})
 
 app.listen(port, () => {
     console.log(`Server Listening at http://localhost:${port}`)
